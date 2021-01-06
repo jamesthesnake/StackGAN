@@ -26,9 +26,9 @@ def parse_args():
                         default=-1, type=int)
     parser.add_argument('--caption_path', type=str, default=None,
                         help='Path to the file with text sentences')
-    # if len(sys.argv) == 1:
-    #    parser.print_help()
-    #    sys.exit(1)
+     if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(1)
     args = parser.parse_args()
     return args
 
